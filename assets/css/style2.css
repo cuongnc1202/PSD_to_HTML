@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Arial - MT';
+    src: url(../fonts/ARIALMT.tff);
+}
+@font-face {
+    font-family: 'Arial - Bold MT';
+    src: url(../fonts/Arial-BoldMT.otf);
+}
+@font-face {
+    font-family: 'Arial - Bold Italic MT';
+    src: url(../fonts/Arial-BoldItalicMT.otf);
+}
+@font-face {
+    font-family: 'Lato - Light Italic';
+    src: url(../fonts/Lato-LightItalic.ttf);
+}
+
+/* Change to bootstrap */
+.container {
+    width: 1000px;
+}
+
+body {
+    font-family: "Arial MT";
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+}
+
+/* ==> Custom css <== */
+
+/* Header begin */
+.header--nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+    min-height: 120px;
+}
+
+.header--nav__menu ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+}
+
+.header--nav__menu>ul>li>a {
+    color: #000000;
+    font-family: "Arial - Bold MT";
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.header--nav__menu>ul>li.show>a {
+    color: #2aacc8;
+    background-color: #ffffff;
+
+}
+
+.header--nav__menu>ul>li.show::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: #2aacc8;
+    top: -5px;
+}
+
+.header--nav__menu>ul>li>ul {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 5px;
+}
+
+.header--nav__menu>ul>li>ul>li {
+    padding: 10px 15px;
+    border-bottom: solid 1px #e8ebf1;
+}
+
+.header--nav__menu>ul>li>ul>li>a {
+    text-transform: capitalize;
+}
+
+.header--nav__menu>ul>li>ul>li:hover {
+    background-color: transparent;
+}
+
+.header--nav__menu>ul>li>ul>li>a:hover {
+    color: #2aacc8;
+    text-decoration: none;
+}
+
+
+/* Footer begin */
+.footer {
+    background-color: #e8ebf1;
+}
+.footer--content {
+    padding: 33px 0px;
+}
+.footer--top {
+    padding-bottom: 20px;
+}
+
+.footer--top h3 {
+    padding-bottom: 15px;
+    color: #000000;
+    font-family: "Arial - Bold MT";
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.footer--top p {
+    font-family: "Arial MT";
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.footer__connect h3 {
+    text-align: center;
+    margin-left: 5px;
+}
+.footer__connect img{
+    float: right;
+    width: 27%;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.footer--bottom p{
+    color: #363636;
+    font-family: "Arial MT";
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.footer--bottom img{
+    float: right;
+}
+
+
+/* Banner begin */
+.banner {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #81e4ed;
+}
+#banner .carousel-item img {
+    width: 100%;
+}
+
+#banner .carousel-caption {
+    top: 100px !important;
+}
+
+
+#banner .carousel-indicators li {
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    color: #626262;
+    /* position: absolute; */
+    /* margin-bottom: -500px; */
+}
+
+/* Blog begin */
+
+.blog {
+    background-color: #e8ebf1;
+}
+.blog--item__text h5 {
+    padding-bottom: 20px;
+    font-family: "Arial - Bold MT";
+    font-style: normal;
+    letter-spacing: normal;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.blog--item__text img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.blog--item__text p {
+    color: #363636;
+    font-family: "Arial MT";
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+}
+.blog--item__button a{
+    font-family: "Arial MT";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: #2aacc8;
+}
+
+
+/* Lastest Works begin */
+
+.lastestWorks--title {
+    padding-top: 30px !important;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Arial - Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+}
+.lastestWorks--title img{
+    width: 14px;
+    height: 24px;
+}
+
+
+/* Customer begin */
+.customer {
+    padding-bottom: 20px;
+}
+.customer--testimonials__title img {
+    width: 24px;
+}
+.customer--testimonials__title{
+    padding-bottom: 10px;
+    color: #000000;
+    font-family: "Arial - Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.customer--testimonials__content {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+}
+
+.customer--testimonials__author {
+    font-family: "Arial - Bold Italic MT";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.customer--logo__title img {
+    width: 24px;
+}
+.customer--logo__title{
+    padding-bottom: 10px;
+    color: #000000;
+    font-family: "Arial - Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.customer--logo__image {
+    width: 160px;
+    height: 101px;
+    box-shadow: inset 0 0 25px #e8ebf1;
+    border: 1px solid #e8ebf1;
+    background-color: #ffffff;
+}
+
+
+/* Advertisement start */
+
+.advertisement--content {
+    border: 1px solid #81e4ed;
+    background-color: #e8fcfe;
+    margin-bottom: 30px;
+
+}
+
+.advertisement--content__description p {
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-top: 25px;
+}
+
+.advertisement--content__button {
+    text-align: center;
+    padding-top: 35px;
+    text-transform: uppercase;
+}

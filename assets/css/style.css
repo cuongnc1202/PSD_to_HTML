@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url(../fonts/ARIALMT.ttf);
+}
+
+@font-face {
+    font-family: 'Arial - Bold MT';
+    src: url(../fonts/Arial-BoldMT.otf);
+}
+
+
+body {
+    font-family: 'Arial MT';
+    color: #363636;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+/* Change to boostraps */
+.container {
+    width: 1000px;
+}
+
+/* Custom my code css */
+.header--nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+    min-height: 120px;
+}
+
+.header--nav__menu li a {
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.header--nav__menu>ul>li>a {
+    color: #000000;
+    font-family: "Arial - Bold MT";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.header--nav__menu>ul>li.show::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #2aacc8;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+}
+
+.header--nav__menu>ul>li.show>a {
+    background-color: #fff;
+    color: #2aacc8;
+}
+
+.header--nav__menu>ul>li>ul {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 5px;
+}
+
+.header--nav__menu>ul>li>ul>li {
+    padding: 10px 15px;
+    border-bottom: solid 1px #e7e7e7;
+}
+
+.header--nav__menu>ul>li>ul>li>a {
+    text-transform: capitalize;
+}
+
+.header--nav__menu>ul>li>ul>li:hover {
+    background-color: transparent;
+}
+
+.header--nav__menu>ul>li>ul>li:hover a {
+    text-decoration: none;
+    color: #2aacc8;
+}
+
+/* .nav {
+    height: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+} */
+/* 
+.nav__logo {
+    width: 148px;
+    height: 37px;
+    padding-top: 36px;
+}
+
+.nav__menu {
+    margin-left: 213px;
+    float: right;
+    width: 621px;
+    height: 11px;
+
+}
+
+.nav__menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav__menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.nav__menu ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+.nav__menu ul li ul {
+    position: absolute;
+    width: 150px;
+    background: #ffffff;
+}
+.nav__menu ul li ul li{
+    text-transform: none;
+    display: block;
+
+}
+
+.banner {
+    height: 500px;
+    background-color: #81e4ed;
+    padding-top: 20px;
+}
+
+.banner__content {
+    height: 440px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.12);
+    background-color: #e05936;
+}
+.banner__content .text {
+    float: left;
+    width: 294px;
+    height: 219px;
+    padding-top: 102;
+    padding-bottom: 119;
+}
+.banner__content .text p {
+    color: #ffffff;
+    font-family: 'Arial MT';
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    float: left;
+}
+
+.banner__content .paper__coffe{
+    float: left;
+    padding-top: 3px;
+    padding-left: 64px;
+}
+.banner__content .comment{
+    float: left;
+    padding-top: 3px;
+    padding-left: 64px;
+} */

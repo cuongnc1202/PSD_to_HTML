@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url(../fonts/ARIALMT.ttf);
+}
+
+@font-face {
+    font-family: 'Arial - Bold MT';
+    src: url(../fonts/Arial-BoldMT.otf);
+}
+
+
+body {
+    font-family: "Arial MT";
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+}
+
+/* Changh to bootstrap */
+.container {
+    width: 1000px;
+}
+
+/* Custom css */
+.header--nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+    min-height: 120px;
+}
+
+.header--nav__menu li a {
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.header--nav__menu>ul>li>a {
+    font-family: 'Arial - Bold MT';
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+
+}
+
+.header--nav__menu>ul>li.show::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #2aacc8;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+}
+
+.header--nav__menu>ul>li.show>a {
+    background-color: #fff;
+    color: #2aacc8;
+}
+
+.header--nav__menu>ul>li>ul {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 5px;
+}
+
+.header--nav__menu>ul>li>ul>li {
+    padding: 10px 20px;
+    border-bottom: solid 1px #e8ebf1;
+}
+
+.header--nav__menu>ul>li>ul>li>a {
+    text-transform: capitalize;
+}
+
+.header--nav__menu>ul>li>ul>li:hover {
+    background-color: transparent;
+}
+
+.header--nav__menu>ul>li>ul>li>a:hover {
+    color: #2aacc8;
+    text-decoration: none;
+}
