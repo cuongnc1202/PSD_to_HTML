@@ -44,13 +44,10 @@ body {
     min-height: 120px;
 }
 
-.blog--item__readMore>a>i {
-    color: #000000;
-    padding-right: 7px;
-}
 #primaryMenu .nav-item>a>i {
     padding-left: 7px;
     color: #000000;
+    font-size: 8px;
 }
 
 .header--nav__menu ul li a {
@@ -245,19 +242,27 @@ body {
 .blog {
     background-color: #e8ebf1;
 }
+.blog--item {
+    padding-top: 30px;
+}
 .blog--item__text h5 {
-    padding-bottom: 20px;
     font-family: "Arial - Bold MT";
     font-style: normal;
     letter-spacing: normal;
     font-size: 15px;
     font-weight: 400;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
 }
-
+.blog--item__text h5>i {
+    color: #ffffff;
+    background-color: #2aacc8;
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
 .blog--item__text img {
     border-radius: 100%;
     width: 40px;
@@ -310,6 +315,7 @@ body {
 .lastestWorks--title img{
     width: 14px;
     height: 24px;
+    margin-right: 15px;
 }
 
 #lastestWorks .owl-nav {
@@ -321,17 +327,40 @@ body {
 #lastestWorks .owl-nav button {
     background-color: #81e4ed;
     border-radius: 100%;
+    width: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #lastestWorks .owl-nav button span {
-    padding: 20px 10px;
-    margin-bottom: 40px;
+    margin: -5px 0 0 0;
 }
 #lastestWorks .owl-dots {
     display: none;
 }
-
-.lastestWorks--item a>img:hover {
-    
+.lastestWorks--item {
+    position: relative;
+}
+.lastestWorks--item .action {
+    position: absolute;
+    bottom: 0;
+    background-color: #2aacc8;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding-top: 20px;
+    opacity: 0;
+    transition: 0.8s all;
+}
+.lastestWorks--item .action i {
+    font-size: 30px;
+    color: #ffffff;
+}
+.lastestWorks--item:hover .action{
+    opacity: 1;
 }
 
 /* Customer begin */
@@ -339,9 +368,6 @@ body {
     padding-bottom: 20px;
 }
 
-.customer--testimonials__title img {
-    width: 24px;
-}
 .customer--testimonials__title{
     padding-bottom: 10px;
     color: #000000;
@@ -353,6 +379,11 @@ body {
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
+}
+.customer--testimonials__title>i {
+    font-size: 30px;
+    margin-right: 14px;
+    color: #2aacc8;
 }
 .customer--testimonials__content {
     padding-right: 50px;
@@ -373,9 +404,10 @@ body {
     line-height: normal;
 }
 
-.customer--logo__title img {
-    width: 24px;
-    margin-right: 8px;
+.customer--logo__title i {
+    font-size: 30px;
+    margin-right: 14px;
+    color: #2aacc8;
     
 }
 .customer--logo__title{
@@ -510,12 +542,14 @@ body {
     padding: 20px;
 }
 
-
-.pagination {
-    display: inline-block;
+.blockPagination .pagination {
+    justify-content: center;
+}
+.blockPagination .pagination .pagination--item{
+    float: none;
 }
 
-.pagination a{
+.blockPagination .pagination a{
     color: black;
     font-family: 'Arial - Bold MT';
     float: left;
@@ -523,14 +557,14 @@ body {
     text-decoration: none;
 }
 
-.pagination a.active {
+.blockPagination .pagination a.active {
     background-color: #81e4ed;
 }
-.pagination a:hover:not(.active) {
+.blockPagination .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
 
-.pagination a.icon{
+.blockPagination .pagination a.icon{
     margin-right: 20px;
     color: #2aacc8;
     background-color: #e8ebf1;
