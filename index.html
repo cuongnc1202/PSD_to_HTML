@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/style2.css ">
+	<link rel="stylesheet" href="assets/css/style.css ">
 	<link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css ">
 	<link rel="stylesheet" href="assets/plugins/OwlCarousel/dist/assets/owl.carousel.min.css ">
 	<link rel="stylesheet" href="assets/plugins/OwlCarousel/dist/assets/owl.theme.default.min.css">
@@ -21,7 +21,8 @@
 				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
 				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#primaryMenu"
 					aria-controls="primaryMenu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<!-- <span class="navbar-toggler-icon"></span> -->
+					<i class="fa fa-bars" aria-hidden="true"></i>
 				</button>
 				<div class="collapse navbar-collapse header--nav__menu" id="primaryMenu">
 					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -43,7 +44,7 @@
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="product.html" id="secondaryMenu"  aria-haspopup="true"
+							<a class="nav-link" href="product.html" id="secondaryMenu" aria-haspopup="true"
 								aria-expanded="false">Portfolio<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 						</li>
 						<li class="nav-item">
@@ -60,8 +61,8 @@
 	<!-- End header -->
 	<!-- Begin content -->
 	<section class="banner">
-		<div class="container">
-			<div class="owl-carousel owl-theme" id="banner">
+		<div class="container banner--content">
+			<div class="owl-carousel owl-theme slider" id="banner">
 				<div class="banner--item">
 					<div class="title">
 						<p>We design clean, crisp & memorable icons</p>
@@ -96,12 +97,11 @@
 		</div>
 	</section>
 	<section class="blog">
-		<div class="container" id="blog">
+		<div class="container">
 			<div class="row py-5">
-				<div class="col-lg-3 col-md-4 col-sm-6 blog--item">
+				<div class="col-xl-3 col-md-6 col-sm-6 blog--item">
 					<div class="blog--item__text">
 						<h5><i class="fa fa-pencil" aria-hidden="true"></i>Clean Theme</h5>
-						<!-- <h5><img src="assets/images/5.jpg" alt="">Clean Theme</h5> -->
 						<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis
 							porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
 					</div>
@@ -109,10 +109,9 @@
 						<a href=""><i class="fa fa-angle-right" aria-hidden="true"> </i> Read more</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 blog--item">
+				<div class="col-xl-3 col-md-6 col-sm-6 blog--item">
 					<div class="blog--item__text">
 						<h5><i class="fa fa-object-group" aria-hidden="true"></i>Responsive Design</h5>
-						<!-- <h5><img src="assets/images/4.jpg" alt="">Responsive Design</h5> -->
 						<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis
 							porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
 					</div>
@@ -120,10 +119,9 @@
 						<a href=""><i class="fa fa-angle-right" aria-hidden="true"> </i> Read more</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 blog--item">
+				<div class="col-xl-3 col-md-6 col-sm-6 blog--item">
 					<div class="blog--item__text">
 						<h5><i class="fa fa-bars" aria-hidden="true"></i>Fully layerd PSD </h5>
-						<!-- <h5><img src="assets/images/2.jpg" alt="">Fully layerd PSD </h5> -->
 						<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis
 							porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
 					</div>
@@ -131,7 +129,7 @@
 						<a href=""><i class="fa fa-angle-right" aria-hidden="true"> </i> Read more</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 blog--item">
+				<div class="col-xl-3 col-md-6 col-sm-6 blog--item">
 					<div class="blog--item__text">
 						<h5><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Ready for coding</h5>
 						<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis
@@ -145,11 +143,11 @@
 		</div>
 	</section>
 	<section class="work">
-		<div class="container" id="lastestWork">
-			<h2 class="lastestWorks--title"><img src="assets/images/6.jpg" alt=""> Lastest works</h2>
+		<div class="container">
+			<h2 class="lastest--work__title"><img src="assets/images/6.jpg" alt=""> Lastest works</h2>
 			<hr>
-			<div class="owl-carousel owl-theme row" id="lastestWorks">
-				<div class="lastestWorks--item">
+			<div class="owl-carousel owl-theme lastest__work" id="lastestWorks">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-1.png" alt="">
 					</a>
@@ -158,7 +156,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-2.png" alt="">
 					</a>
@@ -167,7 +165,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-3.png" alt="">
 					</a>
@@ -176,7 +174,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-4.png" alt="">
 					</a>
@@ -185,7 +183,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-1.png" alt="">
 					</a>
@@ -194,7 +192,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-2.png" alt="">
 					</a>
@@ -203,7 +201,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-3.png" alt="">
 					</a>
@@ -212,7 +210,7 @@
 						<a href="" class="btn"><i class="fa fa-link" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="lastestWorks--item">
+				<div class="lastest--work__item">
 					<a href="">
 						<img src="assets/images/work-4.png" alt="">
 					</a>
@@ -225,12 +223,12 @@
 		</div>
 	</section>
 	<section class="customer">
-		<div class="container" id="customerContent">
+		<div class="container">
 			<hr>
 			<div class="row">
 				<div class="col-md-6 col-sm-12 customer--testimonials">
-					<!-- <h2 class="customer--testimonials__title"><img src="assets/images/icon1.jpg" alt=""> Testimonials -->
-					<h2 class="customer--testimonials__title"><i class="fa fa-commenting" aria-hidden="true"></i> Testimonials
+					<h2 class="customer--testimonials__title"><i class="fa fa-commenting" aria-hidden="true"></i>
+						Testimonials
 					</h2>
 					<p class="customer--testimonials__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo aliquam
@@ -241,29 +239,33 @@
 				</div>
 				<div class="col-md-6 col-sm-12 customer--logo">
 					<h2 class="customer--logo__title"><i class="fa fa-users" aria-hidden="true"></i>Our Clients</h2>
-					<!-- <h2 class="customer--logo__title"><img src="assets/images/icon2.jpg" alt="">Our Clients</h2> -->
-					<div class="row">
-						<img class="col-md-4 customer--logo__image" src="assets/images/logo1.png" alt="">
-						<img class="col-md-4 customer--logo__image" src="assets/images/logo2.png" alt="">
-						<img class="col-md-4 customer--logo__image" src="assets/images/logo3.png" alt="">
-						<img class="col-md-4 customer--logo__image" src="assets/images/logo4.png" alt="">
-						<img class="col-md-4 customer--logo__image" src="assets/images/logo5.png" alt="">
-						<img class="col-md-4 customer--logo__image" src="assets/images/logo6.png" alt="">
+					<div class="customer--logo__area">
+							<img class="img-responsive customer--logo__image" src="assets/images/logo1.png" alt="">
+							<img class="img-responsive customer--logo__image" src="assets/images/logo2.png" alt="">
+							<img class="img-responsive customer--logo__image" src="assets/images/logo3.png" alt="">
+							<img class="img-responsive customer--logo__image" src="assets/images/logo4.png" alt="">
+							<img class="img-responsive customer--logo__image" src="assets/images/logo5.png" alt="">
+							<img class="img-responsive customer--logo__image" src="assets/images/logo6.png" alt="">
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="advertisement">
-		<div class="container" id="advertisementContent">
-			<div class="row advertisement--content">
-				<div class="col-md-6 advertisement--content__description">
-					<p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress
-						website, HTML5 responsive website for your personal or client works. So ahead and download this
-						wonderful PSD template! </p>
-				</div>
-				<div class="col-md-6 advertisement--content__button">
-					<button class="btn btn-lg"><img src="assets/images/download.png" alt=""> DOWNLOAD PSD</button>
+		<div class="container">
+			<div class="advertisement--content">
+				<div class="row">
+					<div class="col-md-6 advertisement--content__description">
+						<p>This is a clean and modern, four column website PSD template. You can code it into a
+							Wordpress
+							website, HTML5 responsive website for your personal or client works. So ahead and download
+							this
+							wonderful PSD template! </p>
+					</div>
+					<div class="col-md-6 advertisement--content__button">
+						<button class="btn btn-lg"><img src="assets/images/download.png" alt=""> DOWNLOAD PSD</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -279,7 +281,7 @@
 						Facere obcaecati, quod excepturi magnam eaque accusamus est voluptatem numquam ex, unde quasi
 						quaerat tempora dignissimos hic?</p>
 				</div>
-				<div class="top--footer__explore col-md-2">
+				<div class="top--footer__explore col-md-2 col-6">
 					<h3>Explore</h3>
 					<ul>
 						<li><a href="">Home</a></li>
@@ -289,7 +291,7 @@
 						<li><a href="">Blog</a></li>
 					</ul>
 				</div>
-				<div class="top--footer__browse col-md-2">
+				<div class="top--footer__browse col-md-2 col-6">
 					<h3>Browse</h3>
 					<ul>
 						<li><a href="">Careers</a></li>
@@ -301,7 +303,8 @@
 				</div>
 				<div class="top--footer__contact col-md-2">
 					<h3>Contact us</h3>
-					<p class="top--footer__contact__companyName">BisLite Inc.</p><p>Always Street 265 0X - 125 - Canada</p>
+					<p class="top--footer__contact__companyName">BisLite Inc.</p>
+					<p>Always Street 265 0X - 125 - Canada</p>
 					<p>Phone: 987-6543-210 Fax: 987-6543-210
 				</div>
 				<div class="top--footer__connect col-md-3">
@@ -328,20 +331,9 @@
 	</footer>
 	<!-- End footer -->
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script>
-		$('#lastestWorks').owlCarousel({
-			items: 4,
-			loop: true,
-			margin: 40,
-			nav: true,
-		});
-		$('#banner').owlCarousel({
-			items: 1,
-			loop: true
-		});
-	</script>
+	<script src="assets/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>
