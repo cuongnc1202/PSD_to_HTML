@@ -1,0 +1,8 @@
+
+inteface Product {
+    
+}
+
+var listData = [{
+
+}]
